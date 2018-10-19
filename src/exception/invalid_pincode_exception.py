@@ -1,0 +1,2 @@
+class InvalidPincodeException(Exception):
+    pass
