@@ -1,2 +1,3 @@
 Flask
-.DS_Store
+dataset
+mysqlclient
