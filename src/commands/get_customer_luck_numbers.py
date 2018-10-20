@@ -10,6 +10,10 @@ class GetCustomerLuckNumbersCommand(object):
         if not Validator.pincode_validator(pincode): return { 'error': 'Pincode inválido' }
 
         pincode = Pincode(pincode)
-        pincode.save()
+
+        try:
+            pincode.save()
+        except:
+            return { 'error': 'Pincode existe' }
 
         return pincode.pincode
