@@ -3,9 +3,6 @@ from helpers.validator import Validator
 
 class TestCpfValidator(unittest.TestCase):
 
-    def setUp(self):
-        pass
-
     def test_return_true_when_cpf_is_valid(self):
         valid_cpf = '35818079805'
         is_valid = Validator.cpf_validator(valid_cpf)
